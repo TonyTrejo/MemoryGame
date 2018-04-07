@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card, CardImg, Button } from 'reactstrap';
-//import { View, Image } from 'react-native';
+import { Card, Button } from 'reactstrap';
+
 
 const Results = (props) => {
     return (
@@ -8,11 +8,11 @@ const Results = (props) => {
             <div className="row">
                 {props.results.map(result => (
 
-                    <div className='col-lg-4'>
+                    <div className='col-lg-3'>
                         <Button onClick={() => props.removeGif(result.id)}> 
+                            {result.id}
                              <Card>
-                               {/* <CardImg top width="30%" src={result.images.original.url} alt={result.title} /> 
-                                <Image src={view.image.source} alt={view.image} />*/}
+                                 <img src={result.src} /> 
                             </Card>
                         </Button>
                     </div>

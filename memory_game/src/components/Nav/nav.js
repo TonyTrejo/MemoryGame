@@ -1,19 +1,19 @@
 import React from "react";
-import "./Nav.css";
+import "./nav.css";
 
 const Nav = (props) => {
   return (
-        <div className="score">
+    <div>
       <nav>
         <div className="nav-container">
-         
-            <ul className='right'>
-              <li className="score"> Score: {props.score}</li>
-              <li className="score"> Top Score: {props.topScore}</li>
-            </ul>
+          <ul className='right'>
+            <li className="score"> Score: {props.score}</li>
+            <li className="score"> Top Score: {props.topScore}</li>
+          </ul>
         </div>
       </nav>
     </div>
-);}
+  );
+}
 
 export default Nav;

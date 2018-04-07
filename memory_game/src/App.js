@@ -39,7 +39,7 @@ button.addEventListener('click', () => {
 import React from "react";
 //import gameBoard from "./components/gameBoard/gameBoard.js";
 //import header from "./src/components/nav";
-import gameOps from "./components/gameOps"
-const App = () => <gameOps/>;
+import GameOps from "./components/gameOps"
+const App = () => <GameOps/>;
 
 export default App;
