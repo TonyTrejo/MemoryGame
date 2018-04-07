@@ -1,2 +1,0 @@
-# MemoryGame
-React Homework

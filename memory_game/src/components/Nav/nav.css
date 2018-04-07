@@ -1,4 +1,12 @@
 nav.navbar {
     margin-bottom: 0;
+    background-color: darkblue;
   }
   
+  .score {
+    color: white;
+  }
+
+  .right {
+    text-align: right;
+  }

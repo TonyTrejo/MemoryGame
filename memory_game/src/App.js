@@ -1,3 +1,4 @@
+/*
 import React, { Component } from 'react';
 
 
@@ -15,7 +16,7 @@ class App extends Component {
     );
   }
 }
-// ScoreBoard
+// ScoreBoard - relocated to src/component/gameOps.js
 
 // Shuffle onClick
 /*
@@ -35,4 +36,10 @@ button.addEventListener('click', () => {
 });
 
 */
+import React from "react";
+//import gameBoard from "./components/gameBoard/gameBoard.js";
+//import header from "./src/components/nav";
+import gameOps from "./components/gameOps"
+const App = () => <gameOps/>;
+
 export default App;

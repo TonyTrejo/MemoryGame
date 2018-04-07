@@ -1,14 +1,19 @@
 import React from "react";
 import "./Nav.css";
 
-const Nav = () => (
-  <nav className="navbar navbar-inverse navbar-top">
-    <div className="container-fluid">
-      <div className="navbar-header">
-
-      </div>
+const Nav = (props) => {
+  return (
+        <div className="score">
+      <nav>
+        <div className="nav-container">
+         
+            <ul className='right'>
+              <li className="score"> Score: {props.score}</li>
+              <li className="score"> Top Score: {props.topScore}</li>
+            </ul>
+        </div>
+      </nav>
     </div>
-  </nav>
-);
+);}
 
 export default Nav;
