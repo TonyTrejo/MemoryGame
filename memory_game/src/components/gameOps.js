@@ -10,36 +10,36 @@ class GameOps extends Component {
 
     componentDidMount() {
         const images = [
-            { src: 'https://www.pexels.com/photo/photography-of-pink-doughnut-928475/' },
-            { src: 'https://facebook.github.io/react-native/docs/assets/favicon.png' },
-            { src: 'https://facebook.github.io/react-native/docs/assets/favicon.png' },
-            { src: 'https://facebook.github.io/react-native/docs/assets/favicon.png' },
-            { src: 'https://facebook.github.io/react-native/docs/assets/favicon.png' },
-            { src: 'https://facebook.github.io/react-native/docs/assets/favicon.png' },
-            { src: 'https://facebook.github.io/react-native/docs/assets/favicon.png' },
-            { src: 'https://facebook.github.io/react-native/docs/assets/favicon.png' },
-            { src: 'https://facebook.github.io/react-native/docs/assets/favicon.png' },
-            { src: 'https://facebook.github.io/react-native/docs/assets/favicon.png' },
-            { src: 'https://facebook.github.io/react-native/docs/assets/favicon.png' },
-            { src: 'https://facebook.github.io/react-native/docs/assets/favicon.png' },
-            { src: 'https://facebook.github.io/react-native/docs/assets/favicon.png' },
-            { src: 'https://facebook.github.io/react-native/docs/assets/favicon.png' },
-            { src: 'https://facebook.github.io/react-native/docs/assets/favicon.png' },
-            { src: 'https://facebook.github.io/react-native/docs/assets/favicon.png' },
+            { src: '../../images/background-baguette-baked-bakery-42064.jpeg' },
+            { src: './images/food-pizza-roll-baked.jpg' },
+            { src: './images/pexels-photo-205961.jpeg' },
+            { src: './images/pexels-photo-209194.jpeg' },
+            { src: './images/pexels-photo-209196.jpeg' },
+            { src: './images/pexels-photo-209201.jpeg' },
+            { src: './images/pexels-photo-209291.jpeg' },
+            { src: './images/pexels-photo-209403.jpeg' },
+            { src: './images/pexels-photo-295043.jpeg' },
+            { src: './images/pexels-photo-298217.jpeg' },
+            { src: './images/pexels-photo-372851.jpeg' },
+            { src: './images/pexels-photo-461385.jpeg' },
+            { src: './images/pexels-photo-533247.jpeg' },
+            { src: './images/pexels-photo-745988.jpeg' },
+            { src: './images/pexels-photo-808941.jpeg' },
+            { src: './images/pexels-photo-965741.jpeg' },
+
+
         ]
         this.setState({ images })
     }
-
-    // score function - pass to ./Nav/nav.js
-
-// button needs to update both score and shuffle    
+    /*
+    // button needs to update both scores and shuffle    
 
     // shuffle function - pass to ./gameBoard/gameBoard.js
-    /*}
-        shuffleDeck = (min, max) => {
+    }
+        shuffleCard = (min, max) => {
             return Math.floor(Math.random() * (max - min + 1) + min)
         }
-        const card = document.querySelector('#pushy');
+        const card = document.querySelector('rndo');
         button.addEventListener('click', () => {
             for(var i = 0; i <shuffleCards; i++) {
               let rndo = getRandomInt(0, 15);
@@ -48,8 +48,11 @@ class GameOps extends Component {
               cards[rndo] = card;
             }
             this.classList.toggle('on');
-        });*/
-
+        });
+    // score function - pass to ./Nav/nav.js
+    //const score = function(props) {
+        
+    */
     render() {
         return (
             <div>
@@ -61,4 +64,9 @@ class GameOps extends Component {
     }
 
 }
+
+
+
+
+
 export default GameOps;
