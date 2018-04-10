@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, Button } from 'reactstrap';
+import './gameBoard.css';
+import { Card, CardImg, Button} from 'reactstrap';
 
 
 const Results = (props) => {
@@ -9,10 +10,10 @@ const Results = (props) => {
                 {props.results.map(result => (
 
                     <div className='col-lg-3'>
-                        <Button onClick={() => props.removeGif(result.id)}> 
+                        <Button color='link' size='sm' onClick={() => props.shuffleImg(result.id)}> 
                             {result.id}
                              <Card>
-                                 <img src={result.src} /> 
+                                 <CardImg src={result.src} /> 
                             </Card>
                         </Button>
                     </div>
