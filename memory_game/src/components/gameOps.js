@@ -5,6 +5,8 @@ import Results from "./gameBoard/gameBoard";
 
 class GameOps extends Component {
     state = {
+        score: 5,
+        topscore: 10,
         images: [
 
             {
@@ -89,6 +91,8 @@ class GameOps extends Component {
             },
 
         ]
+
+        
     }
   
 
@@ -103,25 +107,36 @@ class GameOps extends Component {
         }
     }
 
-    //Scoring function
-/*let score = 0;
-let topscore = 0;
+    handleScore = () => {
+        this.setState({ score: this.state.score + 1 });
 
-document.onclick = function() {
-    const userGuess = String.onclick(event.state.onclick);
-    if(userGuess === 'correct'){
-        score++, topscore++
-    } else(endGame)
-}*/
-
+        if (this.state.topscore <= this.state.score) {
+            const currentScore = this.state.score;
+            this.setState({ topscore: currentScore })
+        }
+    }
  
+handleClick = id => {
+    //alert(id);
+    let myArray = this.state.images;
+    myArray.map( item => { 
+       //console.log(item.id)
+        if (id === item.id) {
+        console.log(item);
+
+        }
+        //return(true);
+    });
+}
+
+
 
     render() {
         return (
             <div>
-                <Nav />
+                <Nav score={this.state.score} topScore={this.state.topscore} />
                 <Header />
-                <Results shuffleImg={this.shuffleImg} results={this.state.images} />
+                <Results shuffleImg={this.shuffleImg} results={this.state.images} handleClick={this.handleClick} />
             </div>
         );
     }

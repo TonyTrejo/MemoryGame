@@ -8,7 +8,7 @@ const Nav = (props) => {
         <div className="nav-container">
           <ul className='right'>
             <li className="score"> Score: {props.score}</li>
-            <li className="score"> Top Score: {props.topScore}</li>
+            <li className="topscore"> Top Score: {props.topScore}</li>
           </ul>
         </div>
       </nav>

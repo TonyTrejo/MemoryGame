@@ -10,7 +10,7 @@ const Results = (props) => {
                 {props.results.map(result => (
 
                     <div className='col-lg-3'>
-                        <Button color='link' size='sm' onClick={() => props.shuffleImg(result.id)}> 
+                        <Button color='link' size='sm' onClick={() => props.handleClick(result.id)}> 
                             {result.id}
                              <Card>
                                  <CardImg src={result.src} /> 
