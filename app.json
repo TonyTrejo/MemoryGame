@@ -1,0 +1,18 @@
+{
+  "name": "MemoryGame",
+  "scripts": {
+  },
+  "env": {
+    "JAWSDB_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "jawsdb"
+  ],
+  "buildpacks": [
+
+  ]
+}
